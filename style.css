@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 231vh;
+    position: relative;
+    padding-top: 500px;
+}
+.main{
+    position: relative;
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+}
+.sea {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+
+.mountains {
+    position: absolute;
+    width: 100%;
+    bottom: 22%;
+    z-index: 4;
+}
+
+.mountain {
+    position: absolute;
+    right: 0;
+    bottom: 24%;
+    width: 50%;
+    z-index: 3;
+}
+
+.sky {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 74%;
+    z-index: 0;
+}
+.shadow {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: rgba(7, 15, 25, 0.75);
+    z-index: 5;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.clouds{
+    position: absolute;
+    mix-blend-mode: overlay;
+}
+.cloud_1 {
+    /* position: absolute; */
+    width: 52%;
+    top: 2%;
+    height: 37%;
+    /* transform: translateX(50px); */
+}
+
+.cloud_2 {
+    /* position: absolute; */
+    width: 40%;
+    top: 6.5%;
+    height: 35%;
+    right: 3%;
+}
+
+.cloud_3 {
+    /* position: absolute; */
+    width: 28%;
+    top: 35%;
+    left: 0;
+    height: 15%;
+}
+
+.sun {
+    position: absolute;
+    height: 15%;
+    top: 43%;
+    right: 42%;
+    z-index: 2;
+}
+
+.sun_around {
+    position: absolute;
+    width: 13%;
+    right: 39.2%;
+    top: 40%;
+    z-index: 2;
+    background: radial-gradient(46.65% 46.65% at 50.01% 49.98%, #FFE070 0%, #000000 100%);
+    background-blend-mode: screen;
+    mix-blend-mode: screen;
+}
+
+.sunshine {
+    position: absolute;
+    height: 15%;
+    right: 42%;
+    top: 43%;
+    background: radial-gradient(46.65% 46.65% at 50.01% 49.98%, #FFE070 0%, #000000 100%);
+    background-blend-mode: screen;
+    mix-blend-mode: screen;
+    transform: rotate(-21.08deg);
+    z-index: 2;
+}
+
+.sunshine2 {
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    left: 10%;
+    top: 15%;
+    background: radial-gradient(50.01% 49.96% at 50.21% 49.92%, #FF862E 0%, #000000 100%);
+    background-blend-mode: screen;
+    mix-blend-mode: screen;
+    opacity: 0.5;
+    z-index: 2;
+}
+.birds{
+    position: absolute;
+    width: 13%;
+    top: 55%;
+    left: 35%;
+    z-index: 2;
+    /* opacity: 0; */
+    /* transform: scale(0); */
+}
+.empty{
+    width: 100%;
+    height: 200vh;
+    z-index: 99;
+}
+.empty img{
+    position: relative;
+    top: 49vh;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}
